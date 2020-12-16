@@ -1,5 +1,7 @@
 ## Final Results
 
+_Please past the [URL of the colab notebook](https://github.com/merrillm1/sentiment_analysis_with_ULMFiT/blob/master/Yelp_Sentiment_Analysis_with_ULMFiT.ipynb) into [Nbviewer](https://nbviewer.jupyter.org/) to see iPlot and Plotly graphs_
+
 The best results were achieved were a 91% accuracy using EDA on review text data for a more robust training set. EDA introduces new words to the vocabulary and can allow for the model to become more versatile through the augmented training data and thus be able to predict better on new data. While the final accuracy was a little over 90%, it did outperform the models trained on the raw and manually cleaned reviews consistently. I did have some scepticism that this may be the result of simply having more training data, so rest assured I did train the models on greater training sizes and did in fact see the same results.
 
 For the raw text, it seemed to consistently outperform the clean text model. This may be because fastai's built in preprocessing allows for more information to be given to the model during training that eventually improves its ability to predict with new data. For the final eda model however, it was much more successful when predictions were made using preprocessed text. This may be because EDA not only transforms the reviews but processes the text as well, thus making it more familiar with clean data.
